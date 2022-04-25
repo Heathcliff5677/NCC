@@ -1,0 +1,116 @@
+nav a{
+  float:right;
+  text-decoration:none;
+  color:#002e5b; 
+  font-size:17px; 
+  padding: 25px 12px; 
+  display:inline-block; 
+  transition: all 0.5s ease 0s;
+}
+#logo{
+  font-size:20px; 
+  text-transform:uppercase; 
+  color:#002e5b; 
+  font-weight:bold;
+  float:left;
+  padding: 20px; 
+  margin-left:17%;
+  
+}
+header{
+  overflow:hidden;
+  background-color:#fde428; 
+  margin-bottom:50px;
+}
+body{
+  margin:0px; 
+  padding:0px; 
+  font-family: 'Open Sans', sans-serif;
+}
+nav{
+  margin-right:17%;
+}
+h1{
+  margin:0px auto; 
+  font-size:26px; 
+  padding:40px 0px; 
+  color:#002e5b; 
+  text-align:center;
+}
+
+h1 span{
+  font-weight:400;
+}
+nav a:hover{
+  background-color:#002e5b; 
+  color:#fde428; 
+  transition: all 0.5s ease 0s;
+}
+h2{
+  font-size:40px
+}
+section{
+  width:100%; 
+  max-width:900px; 
+  margin:0px auto; 
+}
+caption{
+     font-weight: bold;
+     font-size: 12px;
+    }
+    body{
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    th,td{
+    border:1px solid black;
+    padding: 10px;
+    }
+    
+    table{
+     border-collapse:collapse;
+     border:5px solid blue
+    }
+
+     table {
+        border-collapse: collapse;
+    }
+
+     th, td {
+         border: 1px solid black;
+     }
+    
+    thead th {
+     width:25%;
+     background-color: #333;
+     color:white;
+     font-size: 0.8rem;
+     letter-spacing: 2%;
+    }
+    
+    .cell-highlight{
+     background-color: brown;
+    }
+    
+    tbody tr:nth-child(odd){
+     background-color: #fff;
+    }
+    
+    tbody tr:nth-child(even){
+     background-color: #eee;
+    }
+    
+    tbody th{
+     background-color:gold;
+     color:#fff
+     text-algin:left;
+
+     body {
+  font-family: sans-serif;
+}
+
+     table {
+      border-collapse: collapse;
+      border: 1px solid black;
+      text-align: center;
+      vertical-align: middle;
+}
