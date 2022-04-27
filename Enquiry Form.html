@@ -72,13 +72,46 @@ body {
 <div class="content">
 
 <center>
-<form action="Login.html">
-  <label for="uname">User name:</label><br>
-  <input type="text" id="uname" name="uname" value=""><br>
-  <label for="pw">Pass word:</label><br>
-  <input type="pw" id="pw" name="pw" value=""><br><br>
-  <input type="submit" value="Submit">
-</form> 
+<script>
+//  
+  function validateform(){  
+  var name=document.myform.name.value;
+  var Englishname=document.myform.Englishname.value;
+  var x=document.myform.email.value;
+  var atposition=x.indexOf("@");  
+  var dotposition=x.lastIndexOf(".");    
+  var password=document.myform.password.value;  
+    
+  if (name==null || name==""){  
+    alert("Name can't be blank");  
+    return false;}
+    name=document.myform.Englishname.value;
+    if (Englishname==null || name==""){  
+    alert("englishname can't be blank");  
+    return false;}  
+    if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){  
+  alert("Please enter a valid e-mail address \n atpostion:"+atposition+"\n dotposition:"+dotposition);
+    return false;}    
+    if(password.length<6){  
+    alert("Password must be at least 6 characters long.");  
+    return false;
+  }
+  return true
+} 
+    
+  </script>  
+    <form name="myform" method="post" action="mailto:username@hotmail.com" onsubmit="return validateform();">
+      <label for="fname">User name:</label><br>
+      <input type="text" id="name" name="name" ><br>
+      <label for="fname">English name:</label><br>
+      <input type="text" id="Englishname" name="Englishname" ><br>
+      <label for="lname">Email:</label><br>
+      <input type="text" id="email" name="email"><br>
+      <label for="lname">Password:</label><br>
+      <input type="text" id="password" name="password"><br>
+      <input type="submit" value="Submit">
+    </form> 
+  </body>
 
 <p>If the system fails or something else please contact us, our contact information are:</p>
 <p>Phone number:0574-87415012</p>
