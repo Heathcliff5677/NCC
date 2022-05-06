@@ -82,7 +82,12 @@ body {
   var dotposition=x.lastIndexOf(".");    
   var password=document.myform.password.value;  
     
-  if (name==null || name==""){  
+ if (identity=student) {
+    location.href="Course Details.html"; 
+  } else if (identity=parents) {
+    location.href="index.html";  
+  }
+ if (name==null || name==""){  
     alert("Name can't be blank");  
     return false;}
     name=document.myform.Englishname.value;

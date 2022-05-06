@@ -67,12 +67,33 @@ body {
 </head>
 <body>
 
+<div class="column side" style="background-color:#b3ffb3;">
+    <p class="h1">The campus scenery</p >
+    <img class="mySlides" src="p1.jpg" style="width:100%">
+    <img class="mySlides" src="p2.jpg" style="width:100%">
+<img class="mySlides" src="p3.jpg" style="width:100%">
+  </div>
+  <script>
+    var myIndex = 0;
+    carousel();
+    
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}    
+      x[myIndex-1].style.display = "block";  
+      setTimeout(carousel, 2000); // Change image every 2 seconds
+    }
+    </script>    
 <div class="sidenav">
 </div>
 
 <div class="content">
   <h2>School Profile</h2>
-  <img src="https://www.nbcc.cn/xygk/xyjj/201207/W020160422579116262862.jpg" class='writer-img'alt="The picture"width="1000"height="500">
 <p>Ningbo City Vocational and Technical College was founded in 2003. The predecessor of the school was the Vocational and Technical Education College of Ningbo University. In 1992, Mr. Run Run Shaw donated funds to build the former Ningbo Teachers College "Shaw Higher Vocational and Technical Education Center", which is one of the earliest institutions to carry out full-time higher vocational and technical education in Zhejiang Province. In 1996, the former Ningbo University, the former Ningbo Teachers College, and the former Ningbo Branch of Zhejiang Fisheries College merged to form a new Ningbo University, and the Vocational and Technical Education College of Ningbo University was established. In 2000, the former Ningbo Ocean School of the State Oceanic Administration and the former Ningbo Forestry School of the State Forestry Administration were merged into Ningbo University. The majors and personnel of the former Ningbo Forestry School and some majors and personnel of the former Ningbo Ocean School were assigned to the Vocational Education College. In 2003, the provincial government approved the establishment of an independent Ningbo City Vocational and Technical College based on the Vocational Education College of Ningbo University.
 </p>
 </div>
